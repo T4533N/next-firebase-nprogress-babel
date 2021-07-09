@@ -1,0 +1,6 @@
+.eslintrc.js
+generate-sitemap.js
+i18n.js
+next.config.js
+postcss.config.js
+tailwind.config.js
