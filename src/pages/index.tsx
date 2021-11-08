@@ -1,24 +1,41 @@
 import Layout from '@components/layout'
 import { FC } from 'react'
+// import Accordion from '@components/disclosure'
+// import MyModal from '@components/headless-modal'
+import Image from 'next/image'
 
 const Home: FC = () => {
   return (
     <Layout
       title="Tailwindcss | Typescript"
-      className="flex h-screen justify-center items-center bg-gray-50 flex-col overflow-hidden"
+      className="bg-gray-50 h-screen relative"
     >
-      <h1 className="text-5xl font-bold pb-10">Template includes:</h1>
-      <div className="text-4xl flex flex-col">
-        <ul className="list-disc">
-          <li className="text-gray-700">NextJS</li>
-          <li className="text-blue-500">Typescript</li>
-          <li className="text-purple-500"> TailwindCSS</li>
-          <li className="text-yellow-500"> Next Seo</li>
-          <li className="text-green-500"> Eslint </li>
-          <li className="text-pink-500"> Prettier </li>
-          <li className="text-red-500"> Custom Babel & Next config </li>
-        </ul>
+      {/* <MyModal />
+      <div className="h-screen" />
+      sdlfjasfd
+      <div className="h-screen" /> */}
+      {/* <div className="relative max-w-max h-full"> */}
+      <div className="absolute bottom-0 left-0">
+        <Image src="/images/smile-without-cloud.png" width={299} height={245} />
+
+        <div className="absolute -top-56 -right-56">
+          <Image src="/images/upper-cloud.png" width={332} height={254} />
+        </div>
       </div>
+
+      {/* 
+      <div className="h-screen">bhai re bhai</div>
+
+      <div className="flex flex-col justify-center items-center">
+        <div className="ml-96">
+          <Image src="/images/upper-cloud.png" width={332} height={254} />
+        </div>
+        <Image src="/images/smile-without-cloud.png" width={299} height={245} />
+      </div> */}
+
+      {/* <div className="absolute text-over-image">Imagine buying JPEG lol</div> */}
+      {/* <div className="bg-center bg-no-repeat bg-contain object-fill block w-30-rem h-30-rem bg-wojack-think -bottom-6 absolute">
+      </div> */}
     </Layout>
   )
 }
